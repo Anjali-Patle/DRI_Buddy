@@ -1,0 +1,123 @@
+/* CSS Reset */
+body, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for heading */
+  .heading {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #ffffff; /* Dark gray color */
+    background-color: #007bff; /* Light gray background color */
+    padding: 20px; /* Add some padding */
+    border-bottom: 2px solid #007bff; /* Bottom border with blue color */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Add some letter spacing */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Add some shadow */
+  }
+  
+  .chat-container {
+    max-width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  #chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #input-box {
+    display: flex;
+  }
+
+  .user-message {
+    margin-top: 5px;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 5px;
+    align-items: center; 
+    display: flex;
+    word-wrap: break-word;
+    overflow-x: auto;
+  }
+
+  .chat-bot-message {
+    border-bottom: 1px solid lightgray;
+    padding: 15px 5px 10px 5px;
+    background-color: #ddeeff;
+    align-items: center; 
+    display: flex;
+    word-wrap: break-word;
+    overflow-x: auto;
+  }
+
+  .error{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
+    background: #ffdede;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  #user-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button {
+    width: 70px;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+/* Style for chatbot photo */
+.chatbot-photo {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Add some margin */
+}
+
+/* CSS */
+.loading {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
+    vertical-align: middle;
+    padding: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 2px;
+    background-color: #007bff; /* Dot color */
+    animation: bounce 1s infinite ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
